@@ -1,1 +1,19 @@
-<h3>List-students component</h3>
+<h3>Students List component</h3>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+      <tr *ngFor="let student of studentData" >
+        <th scope="row">{{student.id}}</th>
+        <td>{{student.name}}</td>
+        <td>{{student.email}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
