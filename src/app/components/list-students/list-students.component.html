@@ -5,6 +5,7 @@
         <th scope="col">id</th>
         <th scope="col">Name</th>
         <th scope="col">Email</th>
+        <th scope="col">Actions</th>
       </tr>
     </thead>
     <tbody>
@@ -13,6 +14,7 @@
         <th scope="row">{{student.id}}</th>
         <td>{{student.name}}</td>
         <td>{{student.email}}</td>
+        <td><button (click)="deleteStudent(student.id)">Delete</button></td>
       </tr>
      
     </tbody>

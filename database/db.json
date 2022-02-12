@@ -6,11 +6,6 @@
       "email": "student1@gmail.com"
     },
     {
-      "id": 2,
-      "name": "student 2",
-      "email": "student2@gmail.com"
-    },
-    {
       "id": 3,
       "name": "student 3",
       "email": "student2@gmail.com"
@@ -19,21 +14,6 @@
       "name": "julie",
       "email": "julie@gmail.com",
       "id": 4
-    },
-    {
-      "name": "loa",
-      "email": "loea@gmail.com",
-      "id": 5
-    },
-    {
-      "name": "marc",
-      "email": "marc@gmail.com",
-      "id": 6
-    },
-    {
-      "name": "anne anne",
-      "email": "anne.alain.j@gmail.com",
-      "id": 7
     }
   ]
 }
