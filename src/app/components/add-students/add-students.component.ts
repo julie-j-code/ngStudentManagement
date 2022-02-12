@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from "@angular/forms";
+import { StudentsService } from "../../students.service";
 
 @Component({
   selector: 'app-add-students',
@@ -7,7 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddStudentsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private student:StudentsService) {
+  }
+
+  addStudent = new FormGroup(
+    {
+      name: new FormControl('julie'),
+      email: new FormControl('email')
+    }
+  )
+
+  saveStudent(){
+    // console.log(this.addStudent.value);
+    this.student.saveStudentData(this.addStudent.value).subscribe((result)=>{
+      console.log(result);
+    });
+  }
 
   ngOnInit(): void {
   }
