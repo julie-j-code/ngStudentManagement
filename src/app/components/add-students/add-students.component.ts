@@ -8,22 +8,29 @@ import { StudentsService } from "../../students.service";
   styleUrls: ['./add-students.component.css']
 })
 export class AddStudentsComponent implements OnInit {
+  message:boolean=false;
 
   constructor(private student:StudentsService) {
   }
 
   addStudent = new FormGroup(
     {
-      name: new FormControl('julie'),
-      email: new FormControl('email')
+      name: new FormControl(''),
+      email: new FormControl('')
     }
   )
 
   saveStudent(){
     // console.log(this.addStudent.value);
     this.student.saveStudentData(this.addStudent.value).subscribe((result)=>{
-      console.log(result);
+      // console.log(result);
+      this.message=true;
+      this.addStudent.reset({});
     });
+  }
+
+  removeMessage(){
+    this.message=false;
   }
 
   ngOnInit(): void {
