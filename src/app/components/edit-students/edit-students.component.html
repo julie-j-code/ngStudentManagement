@@ -1,1 +1,19 @@
-<h3>Edit-students component</h3>
+<h3>Edit Students component</h3>
+<div *ngIf="message" class="alert alert-success alert-dismissible d-flex justify-content-between align-items-center">
+
+    <strong>Success! Student has been updated</strong>
+
+  <button type="button" class="btn btn-close bg-transparent" data-bs-dismiss="alert" (click)="removeMessage()">x</button>
+</div>
+<form [formGroup]="editStudent" (ngSubmit)="updateStudent()">
+    <div class="mb-3">
+      <label for="name" class="form-label" >Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" formControlName="email">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

@@ -28,4 +28,10 @@ export class ListStudentsComponent implements OnInit {
     })
   }
 
+  // editStudent(student_id:number){
+  //   console.log(student_id);
+
+  // }
+
+
 }

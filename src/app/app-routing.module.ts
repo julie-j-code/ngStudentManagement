@@ -8,7 +8,7 @@ import { RegisterStudentsComponent } from "./components/register-students/regist
 
 const routes: Routes = [
   {path:'add', component:AddStudentsComponent},
-  {path:'edit', component:EditStudentsComponent},
+  {path:'edit/:id', component:EditStudentsComponent},
   {path:'list', component:ListStudentsComponent},
   {path:'login', component:LoginStudentsComponent},
   {path:'register', component:RegisterStudentsComponent}
