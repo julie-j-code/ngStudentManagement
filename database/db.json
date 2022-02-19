@@ -6,14 +6,34 @@
       "id": 1
     },
     {
-      "id": 3,
+      "name": "student 2",
+      "email": "student2@gmail.com",
+      "id": 2
+    },
+    {
       "name": "student 3",
-      "email": "student2@gmail.com"
+      "email": "student3@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "student 4",
+      "email": "student4@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "student 5",
+      "email": "student5@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "student 6",
+      "email": "student6@gmail.com",
+      "id": 6
     },
     {
       "name": "julie",
       "email": "julie@gmail.com",
-      "id": 4
+      "id": 7
     }
   ]
 }

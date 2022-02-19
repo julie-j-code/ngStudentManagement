@@ -10,6 +10,15 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 `json-server --watch db.json`
 
+###
+
+`npm install jquery --save`
+`npm install datatables.net --save`
+`npm install datatables.net-dt --save`
+`npm install angular-datatables --save`
+`npm install @types/jquery --save-dev`
+`npm install @types/datatables.net --save-dev`
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

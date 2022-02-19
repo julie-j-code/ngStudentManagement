@@ -9,11 +9,17 @@ import { StudentsService } from "../../students.service";
 export class ListStudentsComponent implements OnInit {
 
   studentData:any={};
+  dtOptions:DataTables.Settings={};
 
   constructor(private student:StudentsService) { 
   }
 
   ngOnInit(): void {
+    this.dtOptions = {
+      pagingType:'full_numbers',
+      pageLength:5,
+      processing:true
+    },
     this.student.getAllStudents().subscribe((allData)=>{
       // console.log(allData);
       this.studentData=allData;

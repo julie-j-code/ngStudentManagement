@@ -11,6 +11,8 @@ import { LoginStudentsComponent } from './components/login-students/login-studen
 import { ListStudentsComponent } from './components/list-students/list-students.component';
 import { RegisterStudentsComponent } from './components/register-students/register-students.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { DataTablesModule } from 'angular-datatables';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
