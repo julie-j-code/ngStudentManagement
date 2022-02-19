@@ -1,5 +1,6 @@
 <h3>Students List component</h3>
-<table class="table" datatable [dtOptions]="dtOptions">
+
+<table class="table" datatable [dtOptions]="dtOptions" *ngIf="studentData?.length > 5" >
 
   <thead>
     <tr>

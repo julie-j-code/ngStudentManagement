@@ -10,6 +10,7 @@ export class ListStudentsComponent implements OnInit {
 
   studentData:any={};
   dtOptions:DataTables.Settings={};
+  // dtOptions:DataTables.Settings={};
 
   constructor(private student:StudentsService) { 
   }
@@ -18,8 +19,9 @@ export class ListStudentsComponent implements OnInit {
     this.dtOptions = {
       pagingType:'full_numbers',
       pageLength:5,
+      lengthMenu:[5, 10, 15, 50],
       processing:true
-    },
+    }
     this.student.getAllStudents().subscribe((allData)=>{
       // console.log(allData);
       this.studentData=allData;
